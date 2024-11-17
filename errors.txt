@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: end of line expected.
-    scene cass with fade at truecenter
-                         ^
+File "game/script.rpy", line 15: expected 'comma or end of line' not found.
+    with dissolve
+    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Sep 21 22:51:49 2024
+Mon Oct  7 19:17:03 2024

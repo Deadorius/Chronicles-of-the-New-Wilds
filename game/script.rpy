@@ -9,12 +9,16 @@ label start:
     scene house with fade
     "Zbliżyłem się w końcu na tyle, że byłem w stanie określić czym była ta delikatna poświata. Stała przede mną niewielkich rozmiarów chata, z której wydobywał się gwarny dźwięk rozmów, śmiechów i krzyków."
     scene tavern1 with fade
-    "Wpadłem do środka zadyszany i cały oblepiony śniegiem, całkiem jak bałwan. Czułem, że zakłóciłem tym atmosferę tawerny, przez co gwar natychmiast ucichł. Wszyscy z zaciekawieniem przyglądali mi się z większą lub mniejszą bezpośredniością. Otrzepałem się z resztek białego puchu i podszedłem do baru."
-    scene cass at truecenter with fade
+    "Wpadłem do środka zadyszany i cały oblepiony śniegiem, całkiem jak bałwan. Czułem, że zakłóciłem tym atmosferę tawerny, przez co gwar natychmiast ucichł."
+    "Wszyscy z zaciekawieniem przyglądali mi się z większą lub mniejszą bezpośredniością. Otrzepałem się z resztek białego puchu i podszedłem do baru."
+    show cass-placeholder with dissolve:
+        subpixel True pos (-0.19, 0.01) 
     menu:
         "Usiądź i zamów coś":
-            pass
+            "Dialog"
+            cass "Dialog Dialog"
         "Zagadaj do barmanki":
             "Zauważyłeś pracującą przy barze białowłosą barmankę, z"
+            cass "Dialog Dialog"
 
     return
