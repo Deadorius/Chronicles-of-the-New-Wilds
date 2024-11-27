@@ -1,5 +1,5 @@
 ﻿# The game starts here.
-
+# UUUUUUUUU
 label start:
     scene burza1 with fade
     "Już parę godzin temu rozpętała się potężna burza śnieżna. Drobinki zamarzniętej wody uderzały mnie gwałtownie w twarz, przez co nie wiedziałem, gdzie idę."
