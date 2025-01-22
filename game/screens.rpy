@@ -287,48 +287,42 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    fixed:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        #xpos gui.navigation_xpos
+        #yalign 0.5
 
         spacing gui.navigation_spacing
 
         if main_menu:
-
-            textbutton _("Start") action Start()
+            imagebutton auto "gui/button/mm_start_%s.png" xpos 111 ypos 507 focus_mask True action Start()
 
         else:
+            pass
 
-            textbutton _("History") action ShowMenu("history")
+        imagebutton auto "gui/button/mm_load_%s.png" xpos 111 ypos 617 focus_mask True action ShowMenu("load")
 
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Preferences") action ShowMenu("preferences")
+        imagebutton auto "gui/button/mm_pref_%s.png" xpos 14 ypos 751 focus_mask True action ShowMenu("preferences")
 
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
+            pass
+        imagebutton auto "gui/button/mm_about_%s.png" xpos 278 ypos 828 focus_mask True action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            imagebutton auto "gui/button/mm_help_%s.png" xpos 14 ypos 905 focus_mask True action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton auto "gui/button/mm_quit_%s.png" xpos 403 ypos 984 focus_mask True action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -340,7 +334,6 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
-
 
 ## Main Menu screen ############################################################
 ##

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 15: expected 'comma or end of line' not found.
-    with dissolve
-    ^
+File "game/screens.rpy", line 299: the hovered keyword argument was not given a value.
+    imagebutton auto "gui/button/mm_start_%s.png" xpos 83 ypos 275 focus_mask True action Start() hovered 
+                                                                                                          ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Oct  7 19:17:03 2024
+Wed Jan 22 17:27:48 2025
