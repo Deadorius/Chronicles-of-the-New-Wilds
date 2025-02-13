@@ -1,7 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-OSError: Couldn't find file 'audio/select.mp3'.
+  File "game/screens.rpy", line 975, in execute
+    screen help():
+  File "game/screens.rpy", line 975, in execute
+    screen help():
+  File "game/screens.rpy", line 981, in execute
+    use game_menu(_("Help"), scroll="viewport"):
+  File "game/screens.rpy", line 409, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 409, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 468, in execute
+    textbutton _("Help"):
+  File "game/screens.rpy", line 468, in keywords
+    textbutton _("Help"):
+  File "game/screens.rpy", line 471, in <module>
+    action help()
+RuntimeError: input(): lost sys.stdin
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -20,24 +36,46 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 3022, in interact_core
-    renpy.audio.audio.periodic()
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1205, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
-    periodic_pass()
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
-    c.periodic()
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/select.mp3'.
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 2687, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 2687, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 975, in execute
+    screen help():
+  File "game/screens.rpy", line 975, in execute
+    screen help():
+  File "game/screens.rpy", line 981, in execute
+    use game_menu(_("Help"), scroll="viewport"):
+  File "game/screens.rpy", line 409, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 409, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 468, in execute
+    textbutton _("Help"):
+  File "game/screens.rpy", line 468, in keywords
+    textbutton _("Help"):
+  File "game/screens.rpy", line 471, in <module>
+    action help()
+  File "lib/python3.9/_sitebuiltins.py", line 103, in __call__
+  File "lib/python3.9/pydoc.py", line 2005, in __call__
+  File "lib/python3.9/pydoc.py", line 2017, in interact
+  File "lib/python3.9/pydoc.py", line 2037, in getline
+RuntimeError: input(): lost sys.stdin
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 Chronicles of the New Wilds 1.0
-Wed Jan 22 17:27:00 2025
+Thu Feb 13 16:41:54 2025
