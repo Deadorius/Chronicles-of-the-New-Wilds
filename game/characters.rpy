@@ -9,19 +9,21 @@ define oliv = Character("Oliv", color="#f0140c")
 
 define cass = Character("Cass", color="#520b0b")
 
-define player = Character("Gracz", color="#121dac")
+define player = Character("Zachary", color="#121dac")
 
 #do użytku kiedy nie znamy imienia postaci
 define none = Character("???", color="#39393f")
 
 #side characters
-define oldman_nvl = Character("Starzec", kind=nvl, color="#39393f")
+define oldman_nvl = Character(" ", kind=nvl, color="#39393f")
 define oldman = Character("Starzec", color="#39393f")
 define audience = Character("Ktoś z widowni", color="#39393f")
 
 
-image burza1 = "images/placeholder/burza1.jpg"
-image cass = "images/placeholder/cass.jpg"
+image storm1 = "images/placeholder/storm1.jpg"
+image storm2 = "images/placeholder/storm2.jpg"
+image cass_img = "images/placeholder/cass.png"
 image tavern1 = "images/placeholder/tavern1.jpg"
-image tavern2 = "images/placeholder/tavern2.jpg"
+image outside_tavern = "images/placeholder/outside_tavern.jpg"
 image house = "images/placeholder/house.jpg"
+

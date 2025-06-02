@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 299: the hovered keyword argument was not given a value.
-    imagebutton auto "gui/button/mm_start_%s.png" xpos 83 ypos 275 focus_mask True action Start() hovered 
-                                                                                                          ^
+File "game/characters.rpy", line 33: expected 'comma or end of line' not found.
+    cass_img = "images/placeholder/cass.png"
+             ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Jan 22 17:27:48 2025
+Mon Jun  2 22:26:36 2025
