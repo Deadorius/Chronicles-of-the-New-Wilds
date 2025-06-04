@@ -30,3 +30,11 @@ label tavern_story:
     cass "Dobra, rozejść się! Nie ma już żadnego przedstawienia, proszę nie robić mi tutaj rozróby!"
     "Tłum, zawiedziony i zniechęcony przez właścicielkę, rozrzedza się i jedynie nieliczni pozostali w obrębie stołu, rozmawiając ze sobą o przemowie starca."
     "Pierwszy raz w życiu słyszałem o takiej legendzie. Nie jestem pewny, czy aby nie były to jedynie majaki pijanego staruszka, ale warto popytać się ludzi obok, czy może sami czegoś na ten temat nie wiedzą."
+    menu:
+        "Podejdę do…"
+        "…ciemnowłosego, chudego mężczyzny.":
+            jump meeting_kicha
+        "…wysokiego i barczystego mężczyzny o blond włosach pełnego wigoru":
+            jump meeting_mariusz
+        "…rudowłosej dziewczyny pokrytej bliznami.":
+            jump meeting_oliv

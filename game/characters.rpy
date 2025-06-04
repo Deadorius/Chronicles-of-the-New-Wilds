@@ -6,6 +6,7 @@ define kicha = Character("Kicha", color="#faf7ef")
 define mariusz = Character("Mariusz", color="#ffd700")
 
 define oliv = Character("Oliv", color="#f0140c")
+define oliv_nvl = Character("Oliv", kind=nvl, color="#f0140c")
 
 define cass = Character("Cass", color="#520b0b")
 
@@ -26,4 +27,6 @@ image cass_img = "images/placeholder/cass.png"
 image tavern1 = "images/placeholder/tavern1.jpg"
 image outside_tavern = "images/placeholder/outside_tavern.jpg"
 image house = "images/placeholder/house.jpg"
-
+image oliv_img = "images/placeholder/oliv.png"
+image kicha_img = "images/placeholder/kicha.png"
+image mariusz_img = "images/placeholder/mariusz.png"

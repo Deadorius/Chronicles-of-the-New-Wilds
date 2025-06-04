@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 33: expected 'comma or end of line' not found.
-    cass_img = "images/placeholder/cass.png"
-             ^
+File "game/scenes/tavern_meeting.rpy", line 31: expected statement.
+    nvl_clear()
+               ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jun  2 22:26:36 2025
+Wed Jun  4 18:09:20 2025
