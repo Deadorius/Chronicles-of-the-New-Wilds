@@ -98,7 +98,81 @@ label meeting_oliv:
     player "Ale, że do miejsca z legendy?"
     oliv "No tak! Idealna przygoda! No dawaj!"
     "Usłyszeliśmy brzdęk metalu i mamrotanie."
+    none "Gdzie ty idziesz?! Mieliśmy iść do baru. Bar jest w drugą stronę."
+    none "Ejże nie przesadzaj giermku! Choćże za mna. Nie! Do diabła, gdzieś ty się włóczysz?"
+    none "Miałeś tak do mnie nie mówić."
+    "Razem z Oliv powędrowaliśmy wzrokiem w kierunku dochodzących nas głosów."
+    hide oliv_img
+    show mariusz_img with moveinbottom:
+        ypos -252
+        xpos -1264
+        zpos -517.0
+    "Zauważyliśmy dwóch mężczyzn. Jeden z nich, blondyn, uśmiechał się do nas szeroko."
+    show kicha_img with moveinbottom:
+        ypos -487
+        xpos -0.13
+        zpos -1500.0
+        zoom 0.83
+    "Drugi, o kruczoczarnych włosach, miał na twarzy niezadowolony grymas i próbował zawrócić. Blondyn szybko złapał go za ubranie, udaremniając tym samym jego odwrót. Następnie zaciągnął go do naszego stolika."
+    show mariusz_img:
+        subpixel True 
+        pos (-1264, -252) zpos -517.0 
+        linear 1.00 pos (-961, 80) zpos 322.0 
+    show kicha_img:
+        subpixel True 
+        pos (-0.13, -487) zpos -1500.0 
+        linear 1.00 pos (-0.19, -252) zpos -384.0 
+    show oliv_img:
+        subpixel True ypos -458 zpos -708.0 
+        xpos 880 
+        linear 1.00 xpos -121 
+    none"Witajcie dobrzy podróżnicy! Usłyszałem słowo “przygoda” i zanim żem się obejrzał już do Państwa lgnąłem!"
+    none "Co ty wyprawiasz?"
+    none "Witam się z naszymi nowymi towarzyszami!"
+    "Blondyn nadal trzymał drugiego mężczyznę za ubrania. Z jego twarzy nie zniknął uśmiech. Drugi z nich westchnął, po czym zaczął masować swoje skronie."
+    "Spojrzałem na Oliv zdziwiony, ale ona miała na twarzy równie wielki uśmiech co nasz rozmówca."
+    oliv "Kurwa! Chcecie się do nas przyłączyć?!"
+    "Dziewczyna podniosła głos z podekscytowania."
+    player "Zaraz, zaraz… przyłączyć?"
+    oliv "No do wyprawy oczywiście!"
+    none "Tak, do wyprawy! A gdzie się właściwie wybieracie?"
+    none "Czy mógłbyś chociaż raz podjąć jakąkolwiek decyzję PO otrzymaniu wszystkich informacji? Nie przed? Nie wiesz, gdzie oni idą i, patrząc na tego tutaj, on też nie jest pewny."
+    "Czarnowłosy mężczyzna miał zamknięte oczy i ściskał pasek swojej sakwy, wyglądał jakby starał się uspokoić."
+    none "Ah! No tak! Gdzież się podziały nasze maniery?"
+    mariusz "Wołają na mnie Mariusz!"
+    mariusz "A ten przyjemniaczek to Kicha."
+    "Mariusz ukłonił się, a Kicha skinął lekko głową w naszym kierunku."
+    oliv "Oliv. A on.. zaraz, jak ty miałeś na imię?"
+    player "Zachary."
+    mariusz "No! Toż już wszyscy się zaznajomiliśmy! To mówcie, gdzież ta się wybieracie?"
+    oliv "Gadaliśmy o legendzie. Tej, co wcześniej opowiadał jeden z pijaków. Słyszeliście ją?"
+    "Na te słowa Kicha, który do tej pory stał cicho, podniósł głowę."
+    kicha "Tak, słyszeliśmy. To gdzieś na bagnach… cudowna fauna i flora. Rośliny, które ciężko spotkać gdziekolwiek indziej."
+    kicha "Zawsze chciałem je zbadać osobiście."
+    "Mariusz uradowany wkładem Kichy, klepnął go mocno w plecy. Kicha wydał z siebie jęk, po czym odsunął się od Mariusza."
+    mariusz "To idealnie się składa! Ty sobie zbadasz swoje roślinki, a my rozwikłamy tajemnicę tych nieznanych istot!"
+    "Kicha posłał Mariuszowi urażone spojrzenie, ale tamten kompletnie tego nie zauważył"
+    player "W sumie brzmi jak ciekawy pomysł. Zrobiłbym mapy terenu… kto wie, może będę pierwszym kartografem, który nakreśli cały ten teren?"
+    "Rozmarzyłem się trochę na tę myśl. Uśmiechnąłem się, poczułem ciepło w klatce piersiowej. Dawno nie czułem czegoś takiego. Nie od czasów podróży z moją dawną grupą."
+    oliv "Czyli wszyscy są na tak! Zajebiście!"
+    #TODO: tutaj wstawić animacje wstawania, teraz mi się nie chce
+    "Gwałtownie wstała przewracając krzesło."
+    oliv "To co? Kiedy wyruszamy?"
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,48 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/scenes/tavern_meeting.rpy:33
-  File "game/scenes/tavern_meeting.rpy", line 32, in script
-    show oliv_img:
-  File "game/scenes/tavern_meeting.rpy", line 33, in <module>
-    linear zpos -620
-NameError: name 'zpos' is not defined
+While running game code:
+  File "game/scenes/tavern_meeting.rpy", line 117, in script
+    show mariusz_img with move(0.5):
+  File "game/scenes/tavern_meeting.rpy", line 117, in <module>
+    show mariusz_img with move(0.5):
+Exception: MoveTransition can only be applied to one or all layers, not float.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scenes/tavern_meeting.rpy", line 32, in script
-    show oliv_img:
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1076, in show_imspec
-    renpy.config.show(name,
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\exports.py", line 765, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\scenelists.py", line 474, in add
-    thing.visit_all(lambda d : None)
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\displayable.py", line 421, in visit_all
-    for d in self.visit():
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\atl.py", line 764, in visit
-    block = self.compile()
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\atl.py", line 671, in compile
-    block = self.atl.compile(self.context)
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\atl.py", line 873, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\atl.py", line 873, in <listcomp>
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\atl.py", line 1246, in compile
-    duration = ctx.eval(self.duration)
-  File "D:\RenPy\renpy-8.2.1-sdk\renpy\atl.py", line 392, in eval
-    return renpy.python.py_eval(expr, locals=self.context)
+  File "game/scenes/tavern_meeting.rpy", line 117, in script
+    show mariusz_img with move(0.5):
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
   File "D:\RenPy\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "D:\RenPy\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/scenes/tavern_meeting.rpy", line 33, in <module>
-    linear zpos -620
-NameError: name 'zpos' is not defined
+  File "game/scenes/tavern_meeting.rpy", line 117, in <module>
+    show mariusz_img with move(0.5):
+  File "D:\RenPy\renpy-8.2.1-sdk\renpy\display\movetransition.py", line 538, in MoveTransition
+    raise Exception("MoveTransition can only be applied to one or all layers, not %s." % type(widget).__name__)
+Exception: MoveTransition can only be applied to one or all layers, not float.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.2.1.24030407
 Chronicles of the New Wilds 0.1
-Wed Jun  4 18:33:40 2025
+Fri Jun  6 19:49:21 2025
