@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/scenes/tavern_meeting.rpy", line 121: expected 'comma or end of line' not found.
-    with move(1)
-    ^
+File "game/scenes/tavern_meeting.rpy", line 237: expected 'image_name_component' not found.
+    hide:
+        ^
+
+File "game/scenes/tavern_meeting.rpy", line 238: expected statement.
+    kicha_img
+             ^
+
+File "game/scenes/tavern_meeting.rpy", line 239: expected statement.
+    mariusz_img
+               ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Jun  6 19:55:17 2025
+Sun Jun 15 19:53:24 2025

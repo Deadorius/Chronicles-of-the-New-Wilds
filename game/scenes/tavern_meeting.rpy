@@ -1,15 +1,73 @@
 label meeting_kicha:
-    pass
+    show kicha_img with moveinbottom:
+        ypos -487
+        xpos -0.13
+        zpos -1500.0
+        zoom 0.83
+    "Zima dawała mu się we znaki – widać było, że jego skóra już dawno nie widziała słońca. Stał najbliżej ściany i, zamyślony, dłubał ołówkiem w ustach, a w drugiej ręce trzymając notatnik."
+    show mariusz_img with moveinbottom:
+        ypos -252
+        xpos -1264
+        zpos -517.0
+    "Stał obok niego wysoki mężczyzna z jasnymi włosami i wydawało mi się, że otaczała go nadzwyczajnie przyjazna aura."
+    hide mariusz_img with moveoutleft
+    "Ten niższy wysłał po coś tego wyższego do baru i od razu było widać, że mu ulżyło."
+    "Blondyn przy barze od razu rozpoczął konwersację z barmanką, więc widać, że jadaczka raczej mu się nigdy nie zamyka. Zaczynam współodczuwać ból jego kompana."
+    show kicha_img with moveinbottom:
+        ypos -487 xpos -0.13 zpos -1500.0 zoom 0.83
+
+        linear 1.00 pos (-0.19, -252) zpos -384.0
+    "Podchodzę po cichu do zamyślonego mężczyzny, który widocznie znajduje się teraz w swoim świecie."
+    none "*szeptem* Jeśli przejdziemy przez mokradła, a potem …, ale jeśli po drodze napotkamy Warkożmija, to musimy zaopatrzyć się w …"
+    player "Cześć, jestem Zachary!"
+    show kicha_img:
+        subpixel True 
+        ypos -252 
+        linear 0.1 ypos -639 
+        linear 0.1 ypos -252 
+    "Nieznajomy podskoczył w miejscu, przez co prawie wypuścił z rąk swój notatnik. Spojrzał na niego jak na szaleńca i zmierzył wzrokiem od stóp do głów."
+    none "… czy mogę w czymś pomóc?"
+    "Poprawił odruchowo okulary i czekał niepewnie na moją odpowiedź."
+    player "Widziałem, że byłeś zainteresowany legendą, którą opowiadał tamten pijany starzec. Wiesz może o niej coś więcej?"
+    none "Wow… jesteś całkiem bezpośredni. Mam wrażenie, że nie będzie to działać zawsze na twoją korzyść."
+    player "Hahah… wiesz, to wszystko dlatego, bo szanuję twój czas i nie chcę go marnować na jakieś bezsensowne konwenanse."
+    none "Okej, szanuję to. W takim razie, odpowiadając na twoje pytanie, tak, to prawda."
+    none "Od dawna prowadzę badania o plemieniu, które świetnie się dostosowało do miejscowego środowiska, ale nie wiedziałem, że znajdują się akurat za bagnem. Muszę dostosować nasze plany do nowych informacji."
+    player "Ciekawe… staruszek faktycznie wspominał o bagnie w swoim wierszu. Jeszcze nie poznałem osoby, która zapuszczałaby się w tamte rejony. Jest to nadal nieznany teren dla wielu kartografów, niestety także i dla mnie."
+    none "W takim razie świetnie się składa, bo potrzebujemy kogoś, kto zna się na mapach, na pewno możemy przedyskutować wspólnie ten temat. Ja mam dość słabą orientację w terenie, a mój kompan… no cóż… powiedzmy, że nadaje się tylko do zabijania potworów."
+    show mariusz_img with moveinbottom:
+        pos (-961, 80) zpos 322.0 
+    "Nagle, jak na zawołanie, podchodzi do nas wspomniany przed chwilą szeroko uśmiechnięty człowiek - w jednej ręce z piwem, a w drugiej ze szklanką wody"
+    none "Kicha! Mój dobry druhu! Wziąłem twój ulubiony napój, nie musisz dziękować. Ah! A któż to stoi tutaj przed nami?"
+    "Mam wrażenie, że blask jego uśmiechu i osobowość rozjaśnia przestrzeń wokół niego. Podaje mi rękę i tak mocno ściska moją, że już nie wiem, czy moje palce są jeszcze do użytku."
+    mariusz "Jam jest Mariusz, we własnej osobie. Mam nadzieję, że mój przyjaciel także odpowiednio ci się przedstawił, czasami niestety zapomina o manierach."
+    player "Jeśli dobrze zrozumiałem, to nazywa się Kicha."
+    mariusz "Pamięć cię nie myli, mój przyjacielu!"
+    "Widać, jak powieka Kichy drga i stara się mimo wszystko zachować spokój."
+    kicha "Tak, Zachary przyznał się, że jest kartografem i że też jest zainteresowany tak zwaną Wioską Obłąkanych."
+    mariusz "Czyżbyśmy zyskali nowego towarzysza?!"
+    "Powiedział to z nieukrywanym entuzjazmem i położył przy tym swoją rękę na moim ramieniu."
+    mariusz "Z nami czekają cię takie przygody, o których nawet byś nie śnił!"
+    kicha "Mariusz, proszę cię, nie wieszaj się tak na nim, jeszcze złamiesz mu kark tą swoją wielką łapą. W dodatku - nie możemy zapraszać do naszego zespołu każdej osoby, która do nas podejdzie."
+    mariusz "Musisz także pamiętać mój drogi giermku, że kartografowie są bardzo trudni do zdobycia, nie ma ich zbyt wielu, ponieważ jest to całkiem trudna profesja. Możliwe, że jest naszą jedyną opcją."
+    kicha "Wiem, że wybór jest całkiem skromny, ale poznajmy może tego człowieka trochę lepiej, zanim zaproponujemy mu miejsce u nas."
+    "Dodał także szeptem:"
+    kicha "…A może jest mordercą?"
+    player "Hej, emmm… ja was słyszę."
+    jump common_meeting
+
+
+
 
 label meeting_mariusz:
-    pass
+    "work in progress"
 
 label meeting_oliv:
     show oliv_img with moveinbottom:
         ypos -471
         xpos -995
         zpos -637.0
-    "Zbliżyłem się do  rudowłosej dziewczyny, która bawiła się nożem motylkowym."
+    "Zbliżyłem się do rudowłosej dziewczyny, która bawiła się nożem motylkowym."
     "Nogi miała oparte na stole, a obok nich stał do połowy pełny kufel z alkoholem."
     "Odpychała się nogami od stołu, wprawiając krzesło w lekkie kołysanie. Wyglądała na znudzoną. Zanim zdążyłem się odezwać wbiła swój nóż w stół obok dłoni mężczyzny, który za bardzo zbliżył się do jej kufla."
     none "Kurwa staraj się palców nie stracić."
@@ -74,7 +132,7 @@ label meeting_oliv:
     "Jej wzrok stał się mętny, jakby pogrążyła się we wspomnieniach. Znałem ten stan zbyt dobrze. Wzięła kolejny długi łyk z kufla. Odstawiła go z hukiem na stół. Po wcześniejszej melancholii nie zostało śladu."
     oliv "Powiadasz, że interesuje cię legenda."
     "Dziewczyna wróciła do bawienia się nożem motylkowym. Nie drążyłem tematu wcześniejszej zmiany nastroju. Nie jestem odpowiednią osobą, do poruszania takich tematów. Nie w tym momencie. Z resztą byłaby to kompletna hipokryzja z mojej strony."
-    player"Tak. Legenda."
+    player "Tak. Legenda."
     oliv "Dziewczyna powróciła do swojego wcześniejszego podekscytowania."
     oliv "Za dużo to ja nie wiem. Ale widziałam już kiedyś artefakty ze starego świata. Wiesz, technologia sprzed apokalipsy nie została w całości stracona. Na przykład u nas korzystało się z falówek."
     player "Z czego?"
@@ -154,10 +212,15 @@ label meeting_oliv:
     "Kicha posłał Mariuszowi urażone spojrzenie, ale tamten kompletnie tego nie zauważył"
     player "W sumie brzmi jak ciekawy pomysł. Zrobiłbym mapy terenu… kto wie, może będę pierwszym kartografem, który nakreśli cały ten teren?"
     "Rozmarzyłem się trochę na tę myśl. Uśmiechnąłem się, poczułem ciepło w klatce piersiowej. Dawno nie czułem czegoś takiego. Nie od czasów podróży z moją dawną grupą."
+    show oliv_img:
+        xpos -121 ypos -458 zpos -708.0
+
+        linear 0.25 xpos -121 zpos -708.0 ypos -720
     oliv "Czyli wszyscy są na tak! Zajebiście!"
-    #TODO: tutaj wstawić animacje wstawania, teraz mi się nie chce
     "Gwałtownie wstała przewracając krzesło."
     oliv "To co? Kiedy wyruszamy?"
+    show tavern1 with fade
+    jump tavern_argument
 
 
 
@@ -166,9 +229,60 @@ label meeting_oliv:
 
 
 
-
-
-
+label common_meeting:
+    "Dyskusję przerwał im lecący przed nosem kozik, aby następnie wbić się w ścianę pomiędzy mną a Kichą."
+    kicha "Co jest! Jeszcze latających noży tu zabrakło. Kto to rzucił!"
+    hide kicha_img
+    hide mariusz_img
+    with moveoutbottom
+    show oliv_img with moveinbottom:
+        pos (-121, -620) zpos -1276.0 
+    "W tym samym momencie usłyszeliśmy za nami przewracane krzesła i wszechobecne oburzenie. Dziewczyna w niechlujnym wysokim kucyku przyszpiliła do ściany jakiegoś mężczyznę w średnim wieku."
+    none "Nie zadzieraj ze mną, bo, uwierz mi, nie cofnę się przed niczym, aby zedrzeć ci z mordy ten uśmieszek."
+    guy "Kurwa! argh… N-nie ujdzie ci to na sucho! Szef się dowie, co zrobiłaś i znowu skopiemy ci dupsko!"
+    "Miotał tak się chwilę, aż w końcu puściła go i z łomotem runął na podłogę."
+    none "Ta? I co mu powiesz? Że dziewczyna cię gnębiła? A jak mnie znajdziecie? Wy miastowi nie wytropicie nawet królika. A teraz znikaj mi z oczu, zanim naprawdę się wkurzę."
+    "Mężczyzna wstał niepewnie i zrozumiał, że obserwuje ich prawie cała tawerna. Spojrzał ostatni raz groźnym wzrokiem na dziewczynę, po czym ostrożnie ruszył w stronę wyjścia."
+    "Rudowłosa rozglądnęła się i w pewnym momencie spojrzała się właśnie na nas – ruszyła wtedy w naszą stronę"
+    show oliv_img:
+        pos (-121, -620) zpos -1276.0 
+        linear 1.00 xpos -121 ypos -458 zpos -708.0
+    none "O! Mój nóż. Tak się właśnie zastanawiałam, gdzie go wcięło."
+    show kicha_img with moveinbottom:
+        pos (-0.19, -252) zpos -384.0
+        zoom 0.83
+    kicha "Czy ty wiesz, że naraziłaś na niebezpieczeństwo wszystkich dookoła, rzucając nożem byle gdzie?! Czy nie wystarcza tobie fakt, że na zewnątrz grasują bestie, których nie jesteśmy sobie w stanie nawet wyobrazić?!"
+    show mariusz_img with moveinbottom:
+        pos (-961, 80) zpos 322.0 
+    mariusz "Oj już się tak nie spinaj Kicha, przecież wylądował w ścianie, a nie w twojej głowie. Muszę przyznać że są to nie lada umiejętności łotrzyku."
+    none "Dokładnie, typ wie, o co biega, więc nie dramatyzuj tak. Na pewno macie instynkt przetrwania, bo, jakimś cudem, jednak tutaj stoicie."
+    "Patrzyła się na nas przez chwilę, gdy po chwili zauważyłem błysk zrozumienia w jej oczach."
+    none "Chwila, czy to nie wy planujecie znaleźć miejsce ze wspomnianej lokalnej legendy?"
+    kicha "Chcesz jeszcze powiedzieć, że nas podsłuchiwałaś?"
+    none "Mariusz dał dosyć jasno do zrozumienia wszystkim przy barze, jakie macie plany…"
+    "Kicha zmierzył morderczym spojrzeniem Mariusza, który złapał się za kark i zaczął delikatnie śmiać."
+    player "W sumie nawet nawet nie wiemy, jak masz na imię."
+    oliv "Nazywam się Oliv, do usług. Jestem początkującą nomadką, dlatego byłabym bardzo wdzięczna gdybyście wzięli mnie pod swoje skrzydła."
+    "Oliv zrobiła słodkie wielkie oczy, co, przyznaję, prawie wymazało wszystkie moje wcześniejsze wątpliwości."
+    kicha "Eeee… Sądzę, że jest to sprawa na pewno do przegadania. Myślę, że nasza współpraca może się udać, jeśli będziemy mogli sobie zaufać i dowiedzieć się, jakie mamy zamiary wobec odnalezienia Wioski Obłąkanych."
+    "Kicha spojrzał na nas wyczekująco i wyciągnął notatnik. Poczułem się trochę spięty."
+    oliv "Ja… *westchnięcie*. Potrzebuję po prostu odnaleźć artefakt z legendy."
+    mariusz "Mój drogi giermku, czy naprawdę trzeba mieć powód do tego, aby iść na przygodę?"
+    player "Tyle razy ci mówiłem, żebyś mnie tak nie nazywał-"
+    mariusz "Już to widzę oczami wyobraźni: Ja, dzielny rycerz, mój giermek, kartograf oraz …"
+    oliv "Umiem polować i znam się na walce."
+    mariusz "Czyli skrytobójczyni wymierzająca własną sprawiedliwość."
+    oliv "Może być."
+    kicha "Mi zależy na odnalezieniu i dowiedzeniu się czegoś o nowych rasach, które przypominają ludzi."
+    kicha "Niestety informacji na ich temat jest niewiele, a ludzie, którzy przeżyli z nimi spotkanie, często są ledwo kontaktujący. Ta legenda dała mi mały trop, który może mnie na nie naprowadzić."
+    player "Ja po prostu potrzebuję nowej drużyny, żeby przetrwać…"
+    "Aż mi głupio się zrobiło, że mam taki prosty powód."
+    mariusz "Dobrze się składa! My potrzebujemy kompana!"
+    kicha "Dobra, niech wam będzie. Nie mam już siły z wami walczyć, na coś się nadacie."
+    oliv "Dobrze Panowie, skoro skończyliście się już przekomarzać jak baby na targu, może zdecydujemy teraz, jaki jest nasz następny krok."
+    player "Dobrze by było pójść usiąść i to przegadać."
+    oliv "To jak? Idziemy?"
+    jump tavern_argument
 
 
 

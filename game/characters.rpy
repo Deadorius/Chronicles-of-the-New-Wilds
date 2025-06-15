@@ -19,6 +19,7 @@ define none = Character("???", color="#39393f")
 define oldman_nvl = Character(" ", kind=nvl, color="#39393f")
 define oldman = Character("Starzec", color="#39393f")
 define audience = Character("Ktoś z widowni", color="#39393f")
+define guy = Character("Gość", color="#39393f")
 
 
 image storm1 = "images/placeholder/storm1.jpg"
