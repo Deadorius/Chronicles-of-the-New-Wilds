@@ -30,6 +30,31 @@ define config.version = "0.1"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+{b}Autorzy{/b}
+
+Alicja Wilisowska       Pisarz/Edytor
+
+Aleksandra Bobek        Pisarz
+
+Natalia Draniak         Character Artist
+
+Martyna Szczykutowicz   Character Artist
+
+Witkoria Piękna         Background Artist
+
+Kristina Tsvira         UI Artist
+
+Sergiusz Kasprzycki     Manager/Programista
+
+{b}Dodatkowa Pomoc{/b}
+
+Max Strugała
+
+Kateryna Skochylias
+
+Ol Strugała
+
+
 """)
 
 
